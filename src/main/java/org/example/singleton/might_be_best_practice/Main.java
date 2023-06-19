@@ -1,7 +1,8 @@
-package org.example.singleton.thread_problem_with_classic_implementation;
+package org.example.singleton.might_be_best_practice;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Might be instantiation");
         Thread thread1 = new Thread(new MultiThread());
         Thread thread2 = new Thread(new MultiThread());
         Thread thread3 = new Thread(new MultiThread());
@@ -16,5 +17,7 @@ public class Main {
         thread5.start();
         thread6.start();
 
+//        System.out.println(new Object() == new Object());
+//        System.out.println(Validator.INSTANCE == Validator.INSTANCE);
     }
 }

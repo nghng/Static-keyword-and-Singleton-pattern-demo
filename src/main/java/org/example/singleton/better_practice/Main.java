@@ -1,7 +1,8 @@
-package org.example.singleton.thread_problem_with_classic_implementation;
+package org.example.singleton.better_practice;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Double-Checked Locking with Singleton");
         Thread thread1 = new Thread(new MultiThread());
         Thread thread2 = new Thread(new MultiThread());
         Thread thread3 = new Thread(new MultiThread());
@@ -15,6 +16,5 @@ public class Main {
         thread4.start();
         thread5.start();
         thread6.start();
-
     }
 }

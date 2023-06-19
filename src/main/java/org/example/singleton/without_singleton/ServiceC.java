@@ -7,7 +7,7 @@ public class ServiceC {
         Validator validator = new Validator();
         serviceA.doBusinessLogicA();
         serviceB.doBusinessLogicB();
-        validator.printStackTrance(this);
+        validator.printStackTrace(this);
 
 
     }

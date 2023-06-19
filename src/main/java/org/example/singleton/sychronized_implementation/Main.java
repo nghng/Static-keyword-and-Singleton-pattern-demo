@@ -1,4 +1,4 @@
-package org.example.singleton.thread_problem_with_classic_implementation;
+package org.example.singleton.sychronized_implementation;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,6 +15,5 @@ public class Main {
         thread4.start();
         thread5.start();
         thread6.start();
-
     }
 }
